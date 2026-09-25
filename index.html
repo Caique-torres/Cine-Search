@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Pesquise seus filmes favoritos utilizando a API de filmes."
+    >
+
+    <title>CineSearch | Busca de Filmes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-icon">🎬</span>
+            <span>Cine<span>Search</span></span>
+        </div>
+
+        <nav class="nav">
+            <a href="#">Início</a>
+            <a href="#filmes">Filmes</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    🎥 ENCONTRE SEU PRÓXIMO FILME
+                </span>
+
+                <h1>
+                    Qual filme você
+                    <span>quer assistir?</span>
+                </h1>
+
+                <p>
+                    Pesquise por filmes, descubra novos títulos
+                    e encontre sua próxima experiência cinematográfica.
+                </p>
+
+
+                <form id="searchForm" class="search-box">
+
+                    <div class="input-wrapper">
+
+                        <span class="search-icon">🔍</span>
+
+                        <input
+                            type="text"
+                            id="searchInput"
+                            placeholder="Digite o nome de um filme..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                    <button type="submit">
+                        Buscar
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <section id="filmes" class="results">
+
+            <div class="section-header">
+
+                <div>
+                    <span class="section-label">
+                        RESULTADOS
+                    </span>
+
+                    <h2>Filmes encontrados</h2>
+                </div>
+
+                <div class="result-line"></div>
+
+            </div>
+
+
+            <p id="message" class="message"></p>
+
+
+            <section id="movies" class="movies"></section>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            CineSearch
+            <span>•</span>
+            Projeto Front-end
+        </p>
+
+        <p>
+            Desenvolvido com HTML, CSS e JavaScript
+        </p>
+
+    </footer>
+
+    <div id="movieModal" class="movie-modal">
+
+    <div class="modal-content">
+
+        <button id="closeModal" class="close-modal">
+            &times;
+        </button>
+
+        <img id="modalPoster" src="" alt="">
+
+        <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalYear"></p>
+            <p id="modalGenre"></p>
+
+            <p id="modalPlot"></p>
+        </div>
+
+    </div>
+
+</div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
