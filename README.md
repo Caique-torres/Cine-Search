@@ -4,7 +4,7 @@ Uma aplicação web de busca de filmes desenvolvida com HTML, CSS e JavaScript, 
 
 ## Demonstração
 
-[Clique aqui para acessar o CineSearch](https://caique-torres.github.io/CineSearch/)
+[Clique aqui para acessar o CineSearch](https://caique-torres.github.io/Cine-Search/)
 
 ## Funcionalidades
 
